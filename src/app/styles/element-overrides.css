@@ -1,0 +1,94 @@
+/* Hover по умолчанию светлее базового цвета и теряет контраст — делаем темнее */
+.el-button--primary,
+.el-button--success,
+.el-button--warning,
+.el-button--danger,
+.el-button--info {
+  --el-button-hover-text-color: #ffffff;
+}
+
+.el-button--primary {
+  --el-button-hover-bg-color: var(--el-color-primary-dark-2);
+  --el-button-hover-border-color: var(--el-color-primary-dark-2);
+  --el-button-hover-link-text-color: var(--el-color-primary-dark-2);
+}
+
+.el-button--success {
+  --el-button-hover-bg-color: var(--el-color-success-dark-2);
+  --el-button-hover-border-color: var(--el-color-success-dark-2);
+  --el-button-hover-link-text-color: var(--el-color-success-dark-2);
+}
+
+.el-button--warning {
+  --el-button-hover-bg-color: var(--el-color-warning-dark-2);
+  --el-button-hover-border-color: var(--el-color-warning-dark-2);
+  --el-button-hover-link-text-color: var(--el-color-warning-dark-2);
+}
+
+.el-button--danger {
+  --el-button-hover-bg-color: var(--el-color-danger-dark-2);
+  --el-button-hover-border-color: var(--el-color-danger-dark-2);
+  --el-button-hover-link-text-color: var(--el-color-danger-dark-2);
+}
+
+.el-button--info {
+  --el-button-hover-bg-color: var(--el-color-info-dark-2);
+  --el-button-hover-border-color: var(--el-color-info-dark-2);
+  --el-button-hover-link-text-color: var(--el-color-info-dark-2);
+}
+
+/* Теги статуса и приоритета: пары фон/текст с контрастом ≥ 7:1 */
+.task-tag.el-tag {
+  --el-tag-font-size: 12px;
+  font-weight: 600;
+}
+
+.el-tag.task-tag.task-tag--status-todo {
+  --el-tag-bg-color: #eceff3;
+  --el-tag-border-color: #a9b0bb;
+  --el-tag-text-color: #374151;
+}
+
+.el-tag.task-tag.task-tag--status-in_progress {
+  --el-tag-bg-color: #dbe6fb;
+  --el-tag-border-color: #8fafdf;
+  --el-tag-text-color: #1e3a8a;
+}
+
+.el-tag.task-tag.task-tag--status-done {
+  --el-tag-bg-color: #d9f2e1;
+  --el-tag-border-color: #8fbd9a;
+  --el-tag-text-color: #14532d;
+}
+
+.el-tag.task-tag.task-tag--priority-low {
+  --el-tag-bg-color: #eceff3;
+  --el-tag-border-color: #a9b0bb;
+  --el-tag-text-color: #374151;
+}
+
+.el-tag.task-tag.task-tag--priority-medium {
+  --el-tag-bg-color: #fdefd2;
+  --el-tag-border-color: #cdad80;
+  --el-tag-text-color: #7a3e00;
+}
+
+.el-tag.task-tag.task-tag--priority-high {
+  --el-tag-bg-color: #fde2e2;
+  --el-tag-border-color: #e29595;
+  --el-tag-text-color: #8b1c1c;
+}
+
+/* Диалоги не шире экрана на средних разрешениях */
+.el-dialog {
+  max-width: calc(100vw - 24px);
+}
+
+.el-dialog.is-fullscreen {
+  max-width: none;
+}
+
+/* Окно подтверждения на узких экранах */
+.el-message-box {
+  max-width: calc(100vw - 24px);
+}

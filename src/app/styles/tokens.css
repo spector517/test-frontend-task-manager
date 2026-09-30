@@ -1,0 +1,64 @@
+/*
+ * Цвета подобраны под контраст текста не ниже 4.5:1 (WCAG AA).
+ * Дефолтная палитра Element Plus этому не соответствует: например,
+ * белый текст на #409eff — 3:1, #909399 на белом — 3.2:1.
+ */
+:root {
+  --app-bg: #f2f4f7;
+  --app-surface: #ffffff;
+  --app-column-bg: #e4e7ec;
+  --app-border: #d0d5dd;
+  --app-border-strong: #a9b0bb;
+  --app-header-bg: #1f2d3d;
+  --app-header-text: #ffffff;
+
+  --el-text-color-primary: #1f2329; /* 15.6:1 на белом */
+  --el-text-color-regular: #33373d; /* 11.6:1 */
+  --el-text-color-secondary: #5c6068; /* 6.3:1 */
+  --el-text-color-placeholder: #6b6f76; /* 5.0:1 */
+  --el-border-color: #a9b0bb;
+  --el-border-color-light: #d0d5dd;
+  --el-bg-color-page: var(--app-bg);
+
+  --el-color-primary: #1f5fbf; /* белый текст — 6.1:1 */
+  --el-color-primary-light-3: #628fd2;
+  --el-color-primary-light-5: #8fafdf;
+  --el-color-primary-light-7: #bccfec;
+  --el-color-primary-light-8: #d2dff2;
+  --el-color-primary-light-9: #e9eff9;
+  --el-color-primary-dark-2: #194c99;
+
+  --el-color-success: #1e7b34; /* 5.3:1 */
+  --el-color-success-light-3: #62a371;
+  --el-color-success-light-5: #8fbd9a;
+  --el-color-success-light-7: #bcd7c2;
+  --el-color-success-light-8: #d2e5d6;
+  --el-color-success-light-9: #e9f2eb;
+  --el-color-success-dark-2: #18622a;
+
+  --el-color-warning: #9a5b00; /* 5.4:1 */
+  --el-color-warning-light-3: #b88c4d;
+  --el-color-warning-light-5: #cdad80;
+  --el-color-warning-light-7: #e1ceb3;
+  --el-color-warning-light-8: #ebdecc;
+  --el-color-warning-light-9: #f5efe6;
+  --el-color-warning-dark-2: #7b4900;
+
+  --el-color-danger: #c42b2b; /* 5.6:1 */
+  --el-color-danger-light-3: #d66b6b;
+  --el-color-danger-light-5: #e29595;
+  --el-color-danger-light-7: #edbfbf;
+  --el-color-danger-light-8: #f3d5d5;
+  --el-color-danger-light-9: #f9eaea;
+  --el-color-danger-dark-2: #9d2222;
+
+  --el-color-error: var(--el-color-danger);
+
+  --el-color-info: #55595f; /* 7:1 */
+  --el-color-info-light-3: #888b8f;
+  --el-color-info-light-5: #aaacaf;
+  --el-color-info-light-7: #cccdcf;
+  --el-color-info-light-8: #dddedf;
+  --el-color-info-light-9: #eeeeef;
+  --el-color-info-dark-2: #44474c;
+}
